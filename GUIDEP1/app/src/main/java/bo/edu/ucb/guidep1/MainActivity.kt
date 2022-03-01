@@ -18,24 +18,24 @@ class MainActivity : AppCompatActivity() {
     // Referencia: https://stackoverflow.com/questions/45267041/not-enough-information-to-infer-parameter-t-with-kotlin-and-android
 
     private val redBtn : Button
-        get() = findViewById<Button>(R.id.red_btn)
+        get() = findViewById<Button>(R.id.btnRed)
 
     private val whiteBtn: Button
-        get() = findViewById<Button>(R.id.white_btn)
+        get() = findViewById<Button>(R.id.btnWhite)
 
-    private val layoutPrincipal: ConstraintLayout
-        get() = findViewById<ConstraintLayout>(R.id.layout_main)
+    private val layoutPrincipal: LinearLayout
+        get() = findViewById<LinearLayout>(R.id.layoutPrincipal)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         redBtn.setOnClickListener {
-            toast(getString(R.string.btn_red_label))
+            toast(getString(R.string.btn_red))
             layoutPrincipal.setBackgroundColor(Color.RED)
         }
         whiteBtn.setOnClickListener {
-            toast(getString(R.string.btn_white_label))
+            toast(getString(R.string.btn_white))
             layoutPrincipal.setBackgroundColor(Color.WHITE)
         }
 
