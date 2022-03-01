@@ -9,60 +9,70 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtTituloNegocios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
-        android:text="TextView"
+        android:text="@string/txt_title_negocios"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtSubtituloNegocios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="TextView" />
+        android:text="@string/txt_subtitle_negocios" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtNegocioSeleccionado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
         android:gravity="center|center_horizontal"
-        android:text="TextView" />
+        android:text="@string/txt_negocio_seleccionado" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnServicios"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_servicios"
+        android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnPortafolio"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_portafolio"
+        android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAcercaDe"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_acercade"
+        android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnContacto"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_contacto"
+        android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnRedesSociales"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_redessociales"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
 
     <!-- EJERCICIO 0:  BOTONES ROJO Y BLANCO

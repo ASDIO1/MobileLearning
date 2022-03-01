@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">GuideP1</string>
+
+    <!--Guia 2:  Ej 0 Botonoes rojo y blanco -->
     <string name="txt_title_label">Cambio de Colores</string>
     <string name="btn_red">Rojo</string>
     <string name="btn_white">Blanco</string>
+
+    <!-- GUIA 3: EJS 1, 2 Y 3 SOBRE BOTONES DE NEGOCIOS-->
+    <string name="txt_title_negocios">Mi aplicacion de Negocios</string>
+    <string name="txt_subtitle_negocios">Boton Seleccionado:</string>
+    <string name="txt_negocio_seleccionado">a</string>
+    <string name="btn_txt_servicios">Servicios</string>
+    <string name="btn_txt_portafolio">Portafolio</string>
+    <string name="btn_txt_acercade">Acerca De</string>
+    <string name="btn_txt_contacto">Contacto</string>
+    <string name="btn_txt_redessociales">Redes Sociales</string>
+
+
 </resources>
