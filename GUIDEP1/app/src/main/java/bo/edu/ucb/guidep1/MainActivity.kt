@@ -3,6 +3,26 @@ package bo.edu.ucb.guidep1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.graphics.Color
+import android.view.View
+import android.widget.Button
+import android.widget.LinearLayout
+import androidx.constraintlayout.widget.ConstraintLayout
+import kotlin.math.log
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+
+
+/*  EJERCICIO 0:  BOTONES ROJO Y BLANCO
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.graphics.Color
 //import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
@@ -46,3 +66,5 @@ class MainActivity : AppCompatActivity() {
     private fun toast(text: String, duration: Int = Toast.LENGTH_LONG) =
         Toast.makeText(this@MainActivity, text, Toast.LENGTH_LONG).show()
 }
+
+* */
