@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     // Para findViewById:
     // Desde el API 26+  se necesita especificar el tipo de retorno
     // Referencia: https://stackoverflow.com/questions/45267041/not-enough-information-to-infer-parameter-t-with-kotlin-and-android
+
     private val redBtn : Button
         get() = findViewById<Button>(R.id.btnRojo)
 
@@ -27,5 +28,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        redBtn.setOnClickListener {
+            toast(getString(R.string.btn_red_label))
+            layoutPrincipal.setBackgroundColor(Color.RED)
+        }
+        whiteBtn.setOnClickListener {
+            toast(getString(R.string.btn_white_label))
+            layoutPrincipal.setBackgroundColor(Color.WHITE)
+        }
+
+        // Tiene sentido que los Listener se asignen al crearse un layout o view
+        // de esta forma los elementos o views estan listos para responder a sus eventos.
+
     }
+    private fun toast(text: String, duration: Int = Toast.LENGTH_LONG) =
+        Toast.makeText(this@MainActivity, text, Toast.LENGTH_LONG).show()
 }
