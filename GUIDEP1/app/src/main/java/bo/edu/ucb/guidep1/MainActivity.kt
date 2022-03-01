@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 //import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 
@@ -17,13 +18,13 @@ class MainActivity : AppCompatActivity() {
     // Referencia: https://stackoverflow.com/questions/45267041/not-enough-information-to-infer-parameter-t-with-kotlin-and-android
 
     private val redBtn : Button
-        get() = findViewById<Button>(R.id.btnRojo)
+        get() = findViewById<Button>(R.id.red_btn)
 
     private val whiteBtn: Button
-        get() = findViewById<Button>(R.id.btnBlanco)
+        get() = findViewById<Button>(R.id.white_btn)
 
-    private val layoutPrincipal: LinearLayout
-        get() = findViewById<LinearLayout>(R.id.layoutMain)
+    private val layoutPrincipal: ConstraintLayout
+        get() = findViewById<ConstraintLayout>(R.id.layout_main)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
