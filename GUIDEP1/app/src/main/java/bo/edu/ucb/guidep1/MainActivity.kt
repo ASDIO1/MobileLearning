@@ -2,18 +2,48 @@ package bo.edu.ucb.guidep1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.graphics.Color
-import android.view.View
+//import android.graphics.Color
+//import android.view.View
 import android.widget.Button
-import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintLayout
-import kotlin.math.log
+//import android.widget.LinearLayout
+import android.widget.TextView
+//import androidx.constraintlayout.widget.ConstraintLayout
+//import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
+
+    private val  negocioSeleccionadoTxt : TextView
+        get() = findViewById(R.id.txtNegocioSeleccionado)
+    private val serviciosBtn : Button
+        get() = findViewById(R.id.btnServicios)
+    private val portafolioBtn : Button
+        get() = findViewById(R.id.btnPortafolio)
+    private val acercadeBtn : Button
+        get() = findViewById(R.id.btnAcercaDe)
+    private val contactoBtn : Button
+        get() = findViewById(R.id.btnContacto)
+    private val redessocialesBtn : Button
+        get() = findViewById(R.id.btnRedesSociales)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        serviciosBtn.setOnClickListener {
+            negocioSeleccionadoTxt.text = serviciosBtn.text //setText(portafolioBtn.text) Esta forma sirve pero sale warning de optimizacion
+        }
+        portafolioBtn.setOnClickListener {
+            negocioSeleccionadoTxt.text = portafolioBtn.text
+        }
+        acercadeBtn.setOnClickListener {
+            negocioSeleccionadoTxt.text = acercadeBtn.text
+        }
+        contactoBtn.setOnClickListener {
+            negocioSeleccionadoTxt.text = contactoBtn.text
+        }
+        redessocialesBtn.setOnClickListener {
+            negocioSeleccionadoTxt.text = redessocialesBtn.text
+        }
     }
 }
 

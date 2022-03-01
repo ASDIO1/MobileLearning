@@ -9,7 +9,7 @@
     <!-- GUIA 3: EJS 1, 2 Y 3 SOBRE BOTONES DE NEGOCIOS-->
     <string name="txt_title_negocios">Mi aplicacion de Negocios</string>
     <string name="txt_subtitle_negocios">Boton Seleccionado:</string>
-    <string name="txt_negocio_seleccionado">a</string>
+    <string name="txt_negocio_seleccionado">...</string>
     <string name="btn_txt_servicios">Servicios</string>
     <string name="btn_txt_portafolio">Portafolio</string>
     <string name="btn_txt_acercade">Acerca De</string>
