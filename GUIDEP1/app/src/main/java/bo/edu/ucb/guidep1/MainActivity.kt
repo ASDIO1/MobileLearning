@@ -33,14 +33,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         parImparBtn.setOnClickListener {
-
+            val intent = Intent(this, Par_ImparActivity::class.java)
+            startActivity(intent)
         }
 
         serviciosBtn.setOnClickListener {
             negocioSeleccionadoTxt.text = serviciosBtn.text //setText(portafolioBtn.text) Esta forma sirve pero sale warning de optimizacion
             //selectedButton()   esto se asigno en el onClick del .xml en la barra de atributos
             val intent = Intent(this, ServiciosActivity::class.java)
-            startActivity(intent)
+            startActivity(intent) // para transicionar a ServiciosActivity
 
         }
         portafolioBtn.setOnClickListener {
