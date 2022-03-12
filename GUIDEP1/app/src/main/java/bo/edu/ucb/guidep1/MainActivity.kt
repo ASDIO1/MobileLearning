@@ -1,14 +1,14 @@
 package bo.edu.ucb.guidep1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import android.graphics.Color
-//import android.view.View
 import android.widget.Button
-//import android.widget.LinearLayout
 import android.widget.TextView
-//import androidx.constraintlayout.widget.ConstraintLayout
-//import kotlin.math.log
+
+import android.view.View
+import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         serviciosBtn.setOnClickListener {
             negocioSeleccionadoTxt.text = serviciosBtn.text //setText(portafolioBtn.text) Esta forma sirve pero sale warning de optimizacion
+            //selectedButton()   esto se asigno en el onClick del .xml en la barra de atributos
+            val intent = Intent(this, ServiciosActivity::class.java)
+            startActivity(intent)
+
         }
         portafolioBtn.setOnClickListener {
             negocioSeleccionadoTxt.text = portafolioBtn.text
@@ -45,6 +49,15 @@ class MainActivity : AppCompatActivity() {
             negocioSeleccionadoTxt.text = redessocialesBtn.text
         }
     }
+
+    fun selectedButton(view: View) {
+        if ( view.id === R.id.btnServicios) {
+            Toast.makeText( view.context, "Opcion de Servicios", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText( view.context, "Evento no definido", Toast.LENGTH_LONG).show()
+        }
+    }
+
 }
 
 
