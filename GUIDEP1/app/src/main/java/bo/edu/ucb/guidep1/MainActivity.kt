@@ -25,9 +25,16 @@ class MainActivity : AppCompatActivity() {
     private val redessocialesBtn : Button
         get() = findViewById(R.id.btnRedesSociales)
 
+    private val parImparBtn : Button
+        get() = findViewById(R.id.btnParImpar)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        parImparBtn.setOnClickListener {
+
+        }
 
         serviciosBtn.setOnClickListener {
             negocioSeleccionadoTxt.text = serviciosBtn.text //setText(portafolioBtn.text) Esta forma sirve pero sale warning de optimizacion

@@ -41,6 +41,22 @@
         android:text="@string/txt_negocio_seleccionado" />
 
     <Button
+        android:id="@+id/btnParImpar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#4E099C"
+        android:text="@string/btn_txt_parimpar"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnRedesSociales"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#E13A73"
+        android:text="@string/btn_txt_redessociales"
+        android:textColor="#FFFFFF" />
+
+    <Button
         android:id="@+id/btnServicios"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -73,13 +89,6 @@
         android:text="@string/btn_txt_contacto"
         android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/btnRedesSociales"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:backgroundTint="#E13A73"
-        android:text="@string/btn_txt_redessociales"
-        android:textColor="#FFFFFF" />
 </LinearLayout>
 
     <!-- EJERCICIO 0:  BOTONES ROJO Y BLANCO

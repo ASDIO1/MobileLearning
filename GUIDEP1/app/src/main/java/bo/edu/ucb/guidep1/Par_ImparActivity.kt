@@ -1,11 +1,11 @@
-package bo.edu.ucb.idiomas_swipe_permisos
+package bo.edu.ucb.guidep1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class Par_ImparActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_par_impar)
     }
 }

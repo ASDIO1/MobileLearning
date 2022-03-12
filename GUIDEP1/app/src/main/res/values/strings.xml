@@ -16,5 +16,7 @@
     <string name="btn_txt_contacto">Contacto</string>
     <string name="btn_txt_redessociales">Redes Sociales</string>
 
+    <!-- GUIA 4:  EJ 3 - Par-Impar -->
+    <string name="btn_txt_parimpar">Juego Par - Impar</string>
 
 </resources>
