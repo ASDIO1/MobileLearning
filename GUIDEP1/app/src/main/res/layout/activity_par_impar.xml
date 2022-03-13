@@ -7,90 +7,84 @@
     tools:context=".Par_ImparActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/correctText_ParImpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="@string/correct_txt_parimpar"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/incorrectText_ParImpar"
+        app:layout_constraintTop_toBottomOf="@+id/incorrectText_ParImpar" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/correctCounterText_ParImpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/correctText_ParImpar"
+        app:layout_constraintTop_toBottomOf="@+id/incorrectCounterText_ParImpar" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/incorrectText_ParImpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text="@string/incorrect_txt_parimpar"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/incorrectCounterText_ParImpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/incorrectText_ParImpar"
+        app:layout_constraintTop_toTopOf="@+id/incorrectText_ParImpar" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/valueTxt_ParImpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="244dp"
-        android:text="TextView"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/correctText_ParImpar" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/parSelectBtn_ParImpar"
         android:layout_width="168dp"
         android:layout_height="51dp"
         android:layout_marginTop="244dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#CCCCCC"
-        android:text="Button"
+        android:text="@string/par_txt_parimpar"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/imparSelectBtn_ParImpar"
+        app:layout_constraintTop_toBottomOf="@+id/valueTxt_ParImpar" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/imparSelectBtn_ParImpar"
         android:layout_width="168dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="244dp"
         android:backgroundTint="#CCCCCC"
-        android:text="Button"
+        android:text="@string/impar_txt_parimpar"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/valueTxt_ParImpar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

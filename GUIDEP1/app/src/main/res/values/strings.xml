@@ -17,6 +17,10 @@
     <string name="btn_txt_redessociales">Redes Sociales</string>
 
     <!-- GUIA 4:  EJ 3 - Par-Impar -->
-    <string name="btn_txt_parimpar">Juego Par - Impar</string>
+    <string name="btn_txt_parimpar">Juego Par o Impar</string>
+    <string name="incorrect_txt_parimpar">Incorrectos</string>
+    <string name="correct_txt_parimpar">Correctos</string>
+    <string name="impar_txt_parimpar">Impar</string>
+    <string name="par_txt_parimpar">Par</string>
 
 </resources>
