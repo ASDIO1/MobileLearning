@@ -28,12 +28,20 @@ class MainActivity : AppCompatActivity() {
     private val parImparBtn : Button
         get() = findViewById(R.id.btnParImpar)
 
+    private val sumasBtn : Button
+        get() = findViewById(R.id.btnSumas)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        // TODO:  Refactorizar codigo duplicado. Uso de intent y startActivity
         parImparBtn.setOnClickListener {
             val intent = Intent(this, Par_ImparActivity::class.java)
+            startActivity(intent)
+        }
+
+        sumasBtn.setOnClickListener {
+            val intent = Intent(this, SumasActivity::class.java)
             startActivity(intent)
         }
 
@@ -44,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent) // para transicionar a ServiciosActivity
 
         }
+
         portafolioBtn.setOnClickListener {
             negocioSeleccionadoTxt.text = portafolioBtn.text
         }

@@ -49,6 +49,14 @@
         android:textColor="#FFFFFF" />
 
     <Button
+        android:id="@+id/btnSumas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#02AC41"
+        android:text="@string/btn_txt_sumas"
+        android:textColor="#FFFFFF" />
+
+    <Button
         android:id="@+id/btnRedesSociales"
         android:layout_width="match_parent"
         android:layout_height="60dp"

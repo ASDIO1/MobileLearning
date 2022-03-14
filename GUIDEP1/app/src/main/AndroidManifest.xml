@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GuideP1">
+        <activity
+            android:name=".SumasActivity"
+            android:label="@string/btn_txt_sumas">
+            <!-- android:exported="false" -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <activity
             android:name=".MainActivity"
@@ -18,22 +26,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- METADATA y LABEL AGREGADO MANUALMENTE A SERVICIOSACTIVITY: -->
+        </activity> <!-- METADATA y LABEL AGREGADO MANUALMENTE A SERVICIOSACTIVITY: -->
         <activity
             android:name=".ServiciosActivity"
             android:label="@string/btn_txt_servicios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-        </activity>
-
-        <!-- METADATA y LABEL AGREGADO MANUALMENTE A PAR_IMPARACTIVITY: -->
+        </activity> <!-- METADATA y LABEL AGREGADO MANUALMENTE A PAR_IMPARACTIVITY: -->
         <activity
             android:name=".Par_ImparActivity"
             android:label="@string/btn_txt_parimpar">
-            <!--android:exported="false"-->
+            <!-- android:exported="false" -->
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
