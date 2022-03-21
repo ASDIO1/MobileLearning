@@ -10,14 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuideP1">
         <activity
+            android:name=".BotonesAlineadosActivity"
+            android:exported="false" />
+        <activity
             android:name=".SumasActivity"
             android:label="@string/btn_txt_sumas">
+
             <!-- android:exported="false" -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -37,6 +40,7 @@
         <activity
             android:name=".Par_ImparActivity"
             android:label="@string/btn_txt_parimpar">
+
             <!-- android:exported="false" -->
 
             <meta-data

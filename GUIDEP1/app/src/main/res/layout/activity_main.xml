@@ -36,9 +36,17 @@
         android:id="@+id/txtNegocioSeleccionado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center|center_horizontal"
         android:text="@string/txt_negocio_seleccionado" />
+
+    <Button
+        android:id="@+id/btnBotonesAlineados"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#F4A836"
+        android:text="@string/btn_txt_alineados"
+        android:textColor="#5D4037" />
 
     <Button
         android:id="@+id/btnParImpar"
@@ -54,7 +62,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#02AC41"
         android:text="@string/btn_txt_sumas"
-        android:textColor="#FFFFFF" />
+        android:textColor="#3E2723" />
 
     <Button
         android:id="@+id/btnRedesSociales"

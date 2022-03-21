@@ -28,6 +28,8 @@
     <string name="sumando_placeholder_txt">Ingrese numero</string>
     <string name="suma_result_txt">Resultado</string>
     <string name="btn_txt_sumas">Sumar</string>
-    <integer name="number_default"> 0 </integer>
+    <integer name="number_default">0</integer>
 
+    <!-- GUIA 4:  Ejs Clase 2: botones alineados -->
+    <string name="btn_txt_alineados">Botones Alineados</string>
 </resources>
