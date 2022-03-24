@@ -32,4 +32,8 @@
 
     <!-- GUIA 4:  Ejs Clase 2: botones alineados -->
     <string name="btn_txt_alineados">Botones Alineados</string>
+
+    <!-- GUIA 5:  Ejs Clase 3: formulario linear layout -->
+    <string name="btn_txt_formulario">Formulario LinearLayout</string>
+
 </resources>

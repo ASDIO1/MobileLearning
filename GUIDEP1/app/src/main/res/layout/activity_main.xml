@@ -23,7 +23,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="92dp"
-        app:srcCompat="@drawable/profile_placeholder" />
+        app:srcCompat="@drawable/profile_placeholder"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txtSubtituloNegocios"
@@ -36,9 +37,17 @@
         android:id="@+id/txtNegocioSeleccionado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="50dp"
         android:gravity="center|center_horizontal"
         android:text="@string/txt_negocio_seleccionado" />
+
+    <Button
+        android:id="@+id/btnFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#B7E142"
+        android:text="@string/btn_txt_formulario"
+        android:textColor="#5D4037" />
 
     <Button
         android:id="@+id/btnBotonesAlineados"

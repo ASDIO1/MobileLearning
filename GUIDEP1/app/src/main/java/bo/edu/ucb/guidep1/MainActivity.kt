@@ -34,10 +34,18 @@ class MainActivity : AppCompatActivity() {
     private val alineadosBtn : Button
         get() = findViewById(R.id.btnBotonesAlineados)
 
+    private val formularioBtn : Button
+        get() = findViewById(R.id.btnFormulario)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // TODO:  Refactorizar codigo duplicado. Uso de intent y startActivity
+
+        formularioBtn.setOnClickListener {
+            val intent = Intent(this, FormularioActivity::class.java)
+            startActivity(intent)
+        }
 
         alineadosBtn.setOnClickListener {
             val intent = Intent(this, BotonesAlineadosActivity::class.java)
