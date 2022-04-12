@@ -26,13 +26,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Guia 7: Menu
+    //  Para inicializar el menu que creamos
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
+    //  Para sobreescribir el comportamiento de algun item del menu al hacerle click
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item!!.itemId) {
-
             R.id.action_search ->{
                 Log.d("TEST", "ICON SEARCH")
                 true
