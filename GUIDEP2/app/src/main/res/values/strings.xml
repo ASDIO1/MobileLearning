@@ -9,4 +9,6 @@
     <string name="action_search">Buscar</string>
     <string name="action_setting">Configuración</string>
     <string name="err_undefined_event">Evento no definido</string>
+    <!--Guia 8-->
+    <string name="mensaje_snackbar">Hola, soy snackbar</string>
 </resources>

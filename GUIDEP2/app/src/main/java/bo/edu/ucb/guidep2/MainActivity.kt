@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var myToolbar: androidx.appcompat.widget.Toolbar
-
+    lateinit var  layoutPrincipal: View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         supportActionBar.let {
             setSupportActionBar(my_toolbar)
         }*/
+
+        // Guia 8: snackbar
+        layoutPrincipal = findViewById(R.id.layoutPrincipal)
+        Snackbar.make(layoutPrincipal , getString(R.string.mensaje_snackbar), Snackbar.LENGTH_LONG).show()
     }
 
     // Guia 7: Menu
