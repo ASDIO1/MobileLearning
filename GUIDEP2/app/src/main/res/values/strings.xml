@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GuideP2</string>
+    <string name="label_title">Mi aplicación de Negocios</string>
+    <string name="btn_services">Servicios</string>
+    <string name="btn_portfolio">Portafolio</string>
+    <string name="btn_about_me">Acerca de mi</string>
+    <string name="btn_contact">Contacto</string>
+    <string name="btn_social_networks">Redes Sociales</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_setting">Configuración</string>
+    <string name="err_undefined_event">Evento no definido</string>
 </resources>
