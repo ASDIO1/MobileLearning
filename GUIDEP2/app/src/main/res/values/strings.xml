@@ -11,4 +11,11 @@
     <string name="err_undefined_event">Evento no definido</string>
     <!--Guia 8-->
     <string name="mensaje_snackbar">Hola, soy snackbar</string>
+    <!--Guia 9-->
+    <string name="user1">John</string>
+    <string name="email1">john@gmail.com</string>
+    <string name="user2">Andrew</string>
+    <string name="email2">andrew@gmail.com</string>
+    <string name="user3">Kunal</string>
+    <string name="email3">kunal@gmail.com</string>
 </resources>

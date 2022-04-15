@@ -42,10 +42,20 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    // Libreria material design
+    // Cardview support Guia 9:
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'//'com.android.support:cardview-v7:28.0.0'
+    // Segun entendi con esta es la nueva libreria de soporte usada desde el patch de June 17, 2019
+    // Esta libreria da retrocompatibilidad para que versiones de android aintigua ejecuten nuevas funciones
+    // y para que la version actual de android tambien pueda usar funciones legacy.
+    // Enlaces:
+    // https://developers.google.com/android/guides/releases
+    // https://stackoverflow.com/questions/59484016/what-is-the-use-of-androidx-legacylegacy-support-v4-dependency
+    // https://stackoverflow.com/questions/61608021/version-28-is-the-last-version-of-the-legacy-support-library-so-we-recomand-tha#:~:text=on%20this%20post.-,Version%2028(intended%20for%20Android%20Pie%20and%20below)%20is%20the,packages%20in%20the%20androidx%20namespace.
+
+    // Libreria material design Guia 8:
     // libreria de soporte causa errores. Ademas se recomiendo usar material con
     // com.google.android.material   o   con android.support
-    // como android.support da errores, no la usare
+    // como android.support da errores, no la usare. Ademas android 5.0 es compatible sin libreria de support
     //https://material.io/develop/android/docs/getting-started
     //implementation 'com.android.support:design:28.0.0'
 
