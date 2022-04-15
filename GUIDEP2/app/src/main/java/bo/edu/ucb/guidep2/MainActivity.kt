@@ -1,17 +1,22 @@
 package bo.edu.ucb.guidep2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity //antiguamente: android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var myToolbar: androidx.appcompat.widget.Toolbar
     lateinit var  layoutPrincipal: View
+    lateinit var botonCardViewEx1: Button
+    lateinit var botonCardViewEx2: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +34,13 @@ class MainActivity : AppCompatActivity() {
         // Guia 8: snackbar
         layoutPrincipal = findViewById(R.id.layoutPrincipal)
         Snackbar.make(layoutPrincipal , getString(R.string.mensaje_snackbar), Snackbar.LENGTH_LONG).show()
+
+        // Guia 9: Cardviews
+        botonCardViewEx1 = findViewById(R.id.btnEj1)
+        botonCardViewEx1.setOnClickListener {
+            val intent = Intent(this, CardViewEx1::class.java)
+            startActivity(intent)
+        }
     }
 
     // Guia 7: Menu
