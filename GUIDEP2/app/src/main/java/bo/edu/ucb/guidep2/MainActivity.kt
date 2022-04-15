@@ -37,8 +37,13 @@ class MainActivity : AppCompatActivity() {
 
         // Guia 9: Cardviews
         botonCardViewEx1 = findViewById(R.id.btnEj1)
+        botonCardViewEx2 = findViewById(R.id.btnEj2)
         botonCardViewEx1.setOnClickListener {
             val intent = Intent(this, CardViewEx1::class.java)
+            startActivity(intent)
+        }
+        botonCardViewEx2.setOnClickListener {
+            val intent = Intent(this, CardViewEx2::class.java)
             startActivity(intent)
         }
     }
