@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GuideP3</string>
+    <string name="signin">Iniciar Sesion</string>
 </resources>
