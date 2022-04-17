@@ -21,6 +21,12 @@
         android:onClick="openSecondActivity"
         android:text="@string/btnSecond" />
 
+    <Button
+        android:id="@+id/internetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hay internet?" />
+
 </LinearLayout>
 
 
