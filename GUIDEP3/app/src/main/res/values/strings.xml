@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">GuideP3</string>
     <string name="signin">Iniciar Sesion</string>
+    <!--Guia 13-->
+    <string name="title_main">Primera Actividad</string>
+    <string name="title_second">Segunda Actividad</string>
+    <string name="btnSecond">Abrir Segunda Actividad</string>
 </resources>
