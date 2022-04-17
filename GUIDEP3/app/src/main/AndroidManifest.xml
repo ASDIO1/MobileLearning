@@ -4,6 +4,8 @@
 
     <!--Guia 15 - Permiso acceso a internet state-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--Guia 16 - Permiso acceso a internet para usar Picasso-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".App"
