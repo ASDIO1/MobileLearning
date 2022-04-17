@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Inicializacion variable lazy "session" creada en App.kt
-        session.user = "CALYR.SOFTWARE@GMAIL.COM"
+        session.user = Usuario("Roberto Carlos", "Callisaya Mamani", 32) // Guia 14
+        // session.user = "CALYR.SOFTWARE@GMAIL.COM" // Antes Guia 13 - Cuando user esra String
     }
 
     // Funcion para abrir otra activity

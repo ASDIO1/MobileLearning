@@ -11,8 +11,8 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        Toast.makeText(this, session.user, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, session.user.nombre, Toast.LENGTH_SHORT).show() //Guia 13 y 14. EN la 14 se puso user.nombre, porque user es de tipo User, pero user.nombre es String. Toast solo acepta string
         txtUserSession = findViewById(R.id.textView3)
-        txtUserSession.text = session.user
+        txtUserSession.text =  "${session.user.nombre} ${session.user.apellido} ${session.user.edad}"//Guia13: session.user (antes user era un mero string). Ahora se concatenaron cada una de las props del user: User
     }
 }
