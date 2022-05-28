@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         swipeToRefresLayout.setOnRefreshListener {
-            message_text_view.text = Random(100).nextInt(100).toString()
+            message_text_view.text = Random(20).nextInt(0, 100).toString()
             swipeToRefresLayout.isRefreshing = false
             Log.d(TAG, message_text_view.text.toString())
 
