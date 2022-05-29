@@ -17,12 +17,13 @@ class MainActivity : AppCompatActivity() {
         get() = findViewById(R.id.message_text_view)
 
     private val  recyclerView : RecyclerView
-        get() = findViewById(R.id.recyclerView)
+        get() = findViewById(R.id.usersRecyclerView)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // GUIA 18 - RecyclerView
         val lista = arrayListOf<Usuario>()
         lista.add(Usuario("Roberto Carlos Callisaya Mamani", "calyr.software@gmail.com"))
         lista.add(Usuario("Gabriela Orosco Montaño", "gabriela_ocsoro@gmail.com"))
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = linearLayoutManager
 
-
+        // GUIA 17 - SWIPE
         swipeToRefresLayout.setOnRefreshListener {
             message_text_view.text = Random(20).nextInt(0, 100).toString()
             swipeToRefresLayout.isRefreshing = false
