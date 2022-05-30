@@ -2,7 +2,7 @@ package bo.com.ucb.guidep4
 
 class BookRepository(private val bookDao: IBookDao) {
 
-    suspend fun insert(book: Book) {
+    fun insert(book: Book) {
         bookDao.insert(book)
     }
 

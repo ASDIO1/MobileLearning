@@ -12,8 +12,8 @@ interface IBookDao {
     fun getList(): List<Book>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(book:Book)
+    fun insert(book:Book)
 
-    @Query("DELETE FROM book_table")
-    suspend fun deleteAll()
+    /*@Query("DELETE FROM book_table")
+    suspend fun deleteAll()*/
 }
