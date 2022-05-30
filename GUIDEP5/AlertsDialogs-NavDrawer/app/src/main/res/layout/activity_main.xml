@@ -6,13 +6,101 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_alert_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="btn_alert_01"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/btn_alert_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_01"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/btn_alert_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_02"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/btn_alert_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_1"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/btn_alert_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_2"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/btn_alert_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_3"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/btn_alert_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_4"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <Button
+        android:id="@+id/btn_alert_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="btn_alert_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alert_5"
+        app:layout_constraintVertical_bias="0.312" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
