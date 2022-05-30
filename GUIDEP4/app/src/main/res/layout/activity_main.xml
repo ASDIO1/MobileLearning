@@ -17,12 +17,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_notifi_interna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificar"
+        app:layout_constraintBottom_toBottomOf="@+id/usersRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/usersRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usersRecyclerView"
+        app:layout_constraintVertical_bias="0.71000004" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeToRefresLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-251dp">
 
         <TextView
             android:id="@+id/message_text_view"

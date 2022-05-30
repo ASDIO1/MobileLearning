@@ -4,6 +4,7 @@ import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
     private val  recyclerView : RecyclerView
         get() = findViewById(R.id.usersRecyclerView)
+
+    private val  btnNotificacion : Button
+        get() = findViewById(R.id.btn_notifi_interna)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
