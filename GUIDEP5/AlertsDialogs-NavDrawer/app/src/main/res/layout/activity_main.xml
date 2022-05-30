@@ -13,10 +13,10 @@
         android:text="btn_alert_01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/btn_alert_02"
@@ -25,10 +25,10 @@
         android:text="btn_alert_02"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_01"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <Button
         android:id="@+id/btn_alert_1"
@@ -40,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_02"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <Button
         android:id="@+id/btn_alert_2"
@@ -52,7 +52,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_1"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <Button
         android:id="@+id/btn_alert_3"
@@ -64,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_2"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <Button
         android:id="@+id/btn_alert_4"
@@ -76,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_3"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <Button
         android:id="@+id/btn_alert_5"
@@ -85,10 +85,10 @@
         android:text="btn_alert_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_4"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/btn_alert_6"
@@ -98,9 +98,9 @@
         android:text="btn_alert_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_alert_5"
-        app:layout_constraintVertical_bias="0.312" />
+        app:layout_constraintVertical_bias="0.196" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

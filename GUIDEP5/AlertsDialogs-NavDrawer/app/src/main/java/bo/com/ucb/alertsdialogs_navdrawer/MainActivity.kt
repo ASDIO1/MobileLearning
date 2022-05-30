@@ -5,6 +5,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.view.ContextThemeWrapper
@@ -148,7 +149,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        /*buttonAlert6.setOnClickListener {
+        buttonAlert6.setOnClickListener {
             val builder = AlertDialog.Builder(it.context)
             val inflater = layoutInflater
             builder.setTitle("With EditText")
@@ -157,10 +158,7 @@ class MainActivity : AppCompatActivity() {
             builder.setView(dialogLayout)
             builder.setPositiveButton("OK") { dialogInterface, i -> Toast.makeText(it.context, "EditText is " + editText.text.toString(), Toast.LENGTH_SHORT).show() }
             builder.show()
-        }*/
+        }
     }
 
-
-
-    }
 }
