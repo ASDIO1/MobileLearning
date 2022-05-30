@@ -17,6 +17,10 @@ import android.widget.TextView
 import androidx.core.app.NotificationCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +62,25 @@ class MainActivity : AppCompatActivity() {
         btnNotificacion.setOnClickListener{
             notificacionInterna()
         }
+
+        // GUIA 20 - RETROFIT (consumir api)
+        val restApiAdapter = RestApiAdapter()
+        val endPoint = restApiAdapter.connexionApi()
+        val bookResponseCall = endPoint.getAllPost()
+        bookResponseCall.enqueue( object : Callback<List<Post>> {
+            override fun onFailure(call: Call<List<Post>>, t: Throwable) {
+                t?.printStackTrace()
+            }
+
+            override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
+                val posts = response?.body()
+                Log.d("RESP POST", Gson().toJson(posts))
+                posts?.forEach {
+                    Log.d("RESP POST", it.body)
+                }
+            }
+        })
+
     }
 
     fun notificacionInterna() {
