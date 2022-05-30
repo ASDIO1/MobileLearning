@@ -1,0 +1,9 @@
+package bo.com.ucb.guidep4
+
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface EndPointApi {
+    @GET(ConstantsRestApi.POSTS)
+    fun getAllPost(): Call<List<Post>>
+}
